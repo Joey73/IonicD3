@@ -24,7 +24,18 @@ export class AppComponent {
       title: 'Pie Chart',
       url: '/pie-chart',
       icon: 'pie'
+    },
+    {
+      title: 'Donut Chart',
+      url: '/donut-chart',
+      icon: 'radio-button-off'
+    },
+    {
+      title: 'Line Chart',
+      url: '/line-chart',
+      icon: 'pulse'
     }
+
   ];
 
   constructor(
