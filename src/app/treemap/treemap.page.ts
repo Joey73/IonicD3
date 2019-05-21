@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TreemapPage implements OnInit {
   title = 'D3 Treemap with Ionic 4';
-  
+
   constructor() { }
 
   ngOnInit() {
