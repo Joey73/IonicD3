@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { StatsLineChart } from '../../assets/data/data';
 
 import * as d3 from 'd3-selection';
@@ -9,6 +9,7 @@ import * as d3Shape from 'd3-shape';
 
 @Component({
   selector: 'app-line-chart',
+  encapsulation: ViewEncapsulation.None, // IMPORTANT! Otherwise it's not a line chart
   templateUrl: './line-chart.page.html',
   styleUrls: ['./line-chart.page.scss'],
 })
@@ -37,11 +38,6 @@ export class LineChartPage implements OnInit {
   }
 
   initSvg() {
-    /*
-    this.svg = d3.select('svg')
-      .append('g')
-      .attr('transform', 'translate(' + this.margin.left + ',' + this.margin.top + ')');
-    */
     this.svg = d3.select('#lineChart')
       .append('svg')
       .attr('width', '100%')
