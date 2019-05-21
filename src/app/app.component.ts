@@ -34,6 +34,11 @@ export class AppComponent {
       title: 'Line Chart',
       url: '/line-chart',
       icon: 'pulse'
+    },
+    {
+      title: 'Treemap',
+      url: '/treemap',
+      icon: 'grid'
     }
 
   ];

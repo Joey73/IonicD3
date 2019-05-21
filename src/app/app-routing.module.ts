@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'pie-chart', loadChildren: './pie-chart/pie-chart.module#PieChartPageModule' },
   { path: 'line-chart', loadChildren: './line-chart/line-chart.module#LineChartPageModule' },
   { path: 'donut-chart', loadChildren: './donut-chart/donut-chart.module#DonutChartPageModule' },
+  { path: 'treemap', loadChildren: './treemap/treemap.module#TreemapPageModule' },
 ];
 
 @NgModule({
